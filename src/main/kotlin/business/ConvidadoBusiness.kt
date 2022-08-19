@@ -1,6 +1,6 @@
 package business
 
-import entity.Convite
+import entity.Convidado
 
 class ConvidadoBusiness {
 
@@ -8,7 +8,7 @@ class ConvidadoBusiness {
 
     fun maiorDeIdade(idade: Int) = idade >= 18
 
-    fun convidadoValido(convite: Convite) = when (convite.tipo) {
+    fun convidadoValido(convite: Convidado) = when (convite.tipo) {
         "comum" -> convite.codigo.startsWith("xt")
 
         "premium", "luxo" -> convite.codigo.startsWith("xl")

@@ -7,7 +7,7 @@ class Console {
 
             if (info != null && info != "") {
                 retorno = info.toIntOrNull()
-                if (retorno == null || retorno <=1 0) {
+                if (retorno == null || retorno <=0) {
                     println("Valor Invalido.")
                 }
             }else{

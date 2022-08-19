@@ -1,4 +1,0 @@
-package business
-
-class ConviteBusiness {
-}

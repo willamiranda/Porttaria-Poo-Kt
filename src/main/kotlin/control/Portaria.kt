@@ -13,7 +13,7 @@ class Portaria {
     private fun controle(): String {
         val idade = Console.readInt("Qual sua idade?")
         val convidado = Convite(idade = idade)
-        if(!convidadoBusiness.maiorDeIdade(idade)){
+        if(!convidadoBusiness.maiorDeIdade(convidado.idade)){
             return "Negado, Menores de idade não são permitidos"
 
         }
